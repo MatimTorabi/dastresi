@@ -1,14 +1,14 @@
-import Articles from "./Articles/Articles";
-import Brand from "./Brand/Brand";
-import Card from "./Card/Card";
-import Category from "./Category/Category";
-import Categorym from "./Categorym/Categorym";
-import Dastresi from "./Dastresi/Dastresi";
-import Header from "./Header/Header"
-import Menu from "./Menu/Menu";
-import Products from "./Products/Products";
-import Productsexist from "./Productsexist/Productsexist";
-import Slider from "./Slider/Slider"
+import Articles from "./Articles/Articles.js";
+import Brand from "./Brand/Brand.js";
+import Card from "./Card/Card.js";
+import Category from "./Category/Category.js";
+import Categorym from "./Categorym/Categorym.js";
+import Dastresi from "./Dastresi/Dastresi.js";
+import Header from "./Header/Header.js"
+import Menu from "./Menu/Menu.js";
+import Products from "./Products/Products.js";
+import Productsexist from "./Productsexist/Productsexist.js";
+import Slider from "./Slider/Slider.js"
 
 
 function excuteslider() {
