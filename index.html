@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروشگاه اینترنتی دسترسی</title>
+  <link rel="stylesheet" href="./src/css/output.css">
+  <link rel="shortcut icon" href="./public/image/favicon.png">
+  <link rel="stylesheet" href="./src/css/slider.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- #region project  -->
+    <div>
+      <!-- #region header  -->
+        <header dir="rtl"  class="sticky top-0 left-0 z-[50]  mobile:bg-[#e2e2e2] laptop:bg-white w-[100%] desktop:px-0 mobile:px-[20px] mobile:h-[60px] laptop:h-[133px] flex items-center justify-center shadow-md">
+            <div class="mobile:w-full laptop:w-[1240px] h-full flex laptop:flex-col mobile:flex-row">
+              <div class="w-full mobile:h-full laptop:h-[80px] flex mobile:items-center laptop:items-start justify-between">
+                <div class="mobile:hidden laptop:flex w-[80%] h-full flex items-center gap-[30px]">
+                  <img src="./public/image/header/logo.png" alt="" class="w-[96px] h-[40px]">
+                  <div dir="rtl" class="w-[371px] h-[40px] flex rounded-xl shadow bg-[#F7F8FA]">
+                    <div class="w-[30px] h-[40px] items-center justify-center flex">
+                      <i class="icon icon-search-normal text-xl text-[#A9A9A9]"></i>
+                    </div>
+                    <div class="w-[341px] h-[40px] flex items-center">
+                      <input type="search" class="w-full text-[16px] font-[Yekan] outline-none text-[#757575] " placeholder="جستجو محصولات" >
+                    </div>
+                  </div>
+                  <div class="w-[290px] h-[30px] flex justify-between items-center">
+                    <a href="#" class="text-[14px] font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">باشگاه مشتریان</a>
+                    <a href="#" class="text-[14px] font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">بلاگ</a>
+                    <a href="#" class="text-[14px] font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">ارتباط ما</a>
+                    <a href="#" class="text-[14px] font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">درباره ما</a>
+                  </div>
+                </div>
+                <div class="mobile:hidden laptop:flex w-[20%] h-full flex items-center justify-end flex-row relative gap-3">
+                  <a href="#">
+                    <div class="h-[42px] shadow rounded-xl flex justify-center items-center text-[14px] bg-[#F7F8FA] font-[Yekan] text-white w-[42px] ">
+                      <span class="cursor-pointer bg-[#FE5F55] absolute flex items-center justify-center rounded-full text-white w-[20px] h-[20px] top-[12px] left-[145px]">0</span>
+                      <i class=" text-xl icon-basket text-[#FE5F55] pt-1.5 hover:text-[#0A295A] transition-all duration-200 ease-linear"></i>
+                    </div> 
+                  </a>
+                  <a href="#"><div class="h-[42px] shadow rounded-xl flex justify-center items-center text-[14px] bg-[#0A5ABD] font-[Yekan] text-white w-[103px] hover:bg-[#2c5282] transition-all duration-300 ease-linear">ورود و ثبت‌نام</div></a>
+                </div>
+                <div class="flex gap-2.5 laptop:hidden mobile:flex justify-center items-center">
+                  <i id="drawer-button" class="fas fa-bars z-30 text-2xl icon-menu sidebar-toggle cursor-pointer text-[#9e9e9e]"></i>
+                  <img src="./public/image/header/logo.png" alt="" class="w-[58px] h-[24px]">
+                  <!-- دراور اصلی -->
+                    <div id="drawer-container" class="hidden">
+                        <div id="drawer-trigger"></div>
+                        <div id="main-drawer" class="bg-white shadow-xl">
+                            <div class="w-full h-[129px] border-b border-gray-200 text-white flex items-center justify-center">
+                              <a class=""  id="close-drawer" href="#">
+                                <img class="w-[150px] h-[64px]" src="./public/image/header/logo.png">
+                              </a>
+                            </div>
+                            <div class="w-full h-[42px] flex items-center justify-center border-b gap-7 border-gray-200">
+                              <a href="#" class="text-xs font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">باشگاه مشتریان</a>
+                              <a href="#" class="text-xs font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">بلاگ</a>
+                              <a href="#" class="text-xs font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">ارتباط ما</a>
+                              <a href="#" class="text-xs font-[Yekan] text-[#a3a3a3] hover:text-[#0A295A] transition-all duration-200 ease-linear">درباره ما</a>
+                            </div>
+                            
+                            <div class="overflow-y-auto h-auto ">
+                                <!-- بخش اکاردیون -->
+                                <div class="accordion-group draver">
+                                    <!-- آیتم اکاردیون 1 -->
+
+                                </div>
+                            </div>
+                            <div class="w-full h-auto pr-2 pt-8">
+                              <a href="#" class="pr-5">
+                                <div class="w-[268px] flex items-center justify-center text-white hover:text-[#000000] font-[Yekan] h-[45px] bg-[#0a295a] rounded-xl">ورود به باشگاه مشتریان</div>
+                              </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex gap-4 laptop:hidden mobile:flex relative">
+                  <span class="cursor-pointer bg-[#FE5F55] absolute flex items-center justify-center rounded-full text-white w-[20px] h-[20px] top-[-5px] left-[15px] font-[Yekan]">0</span>
+                  <i class="text-[#9e9e9e] icon-search text-2xl" id="mobile-search-handle"></i>
+                  <i class="text-[#9e9e9e] popover-handle icon-account text-2xl"></i>
+                  <i class="text-[#9e9e9e] cursor-pointer cart-handle icon-cart text-2xl"></i>
+                </div>
+              </div>
+              <div class="mobile:hidden laptop:flex w-full flex justify-between mobile:h-full laptop:h-[53px] ">
+                <nav class="flex justify-between items-center pt-1.5 w-full">
+                    <ul class="w-full flex h-full items-center justify-between item">
+
+                    </ul>
+                </nav>
+              </div>            
+
+            </div>
+
+        </header>
+      <!-- #endregion -->
+
+
+
+      <!-- #region slider -->
+        <section dir="rtl" class="w-full mobile:h-[200px] tablet:h-[350px] laptop:h-[470px] flex justify-center items-center mobile:px-[30px] laptop:px-0">
+          <div class="mobile:w-full laptop:w-[1240px] mobile:h-[145px] tablet:h-[295px] laptop:h-[400px] ">
+                <div class="swiper mySwiper rounded-xl ">
+                  <div class="swiper-wrapper slide">
+
+                  </div>
+                <div class="swiper-pagination"></div>
+              </div>
+          </div>
+        </section>
+      <!-- #endregion -->
+
+      <!-- #region card  -->
+        <section dir="rtl"  class=" w-full mobile:h-auto laptop:h-[761px] flex justify-center items-center mobile:pb-6 laptop:pb-0">
+          <div class="mobile:w-full laptop:w-[1240px] bg-[#e2e2e2] laptop:px-[50px] laptop:pb-[50px] mobile:px-5 tablet:px-12 laptop:rounded-xl h-full flex items-center flex-col">
+            <div class="w-full h-[15%] mobile:py-8 flex mobile:justify-center items-center">
+              <div class="w-full h-full flex items-center laptop:justify-start mobile:justify-center">
+                <i class="mobile:hidden laptop:flex icon-percent text-4xl text-[#FE5F55]"></i>
+                <h1 class="text-[#757575] mobile:text-2xl laptop:text-4xl font-[Yekan]">تخفیف‌های روزانه دسترسی</h1>
+              </div>
+            </div>
+            <div class="cards w-full mobile:h-auto laptop:h-[85%] flex laptop:flex-row mobile:flex-col justify-between mobile:gap-5 laptop:gap-0">
+                      <a href="" class="">
+                        <div class="mobile:w-full mobile:h-[161px] laptop:w-[405px] laptop:h-[605px] bg-white rounded-xl hover:shadow-xl laptop:p-5 flex mobile:flex-row laptop:flex-col laptop:gap-5">
+                              <img src="./public/image/card/img-1.jpg" alt="" class="rounded-r-xl">
+                              <div class="mobile:w-full laptop:w-auto flex flex-col laptop:h-full justify-between">
+                                  <p class="text-start font-[Yekan] mobile:text-xs tablet:text-sm laptop:text-[16px] leading-7 line-clamp-3 text-[#000000DE]">شارژر دیواری و پاوربانک وایرلس 20000 میلی آمپری 22.5 واتی هیسکا مدل Hiska HP-223PD</p>
+                                  <div class="flex flex-col">
+                                      <div class="flex mobile:justify-between laptop:gap-2 mobile:w-full laptop:w-auto mobile:pl-2.5 laptop:pl-0">
+                                          <span class="font-[Yekan] mobile:text-[13px] tablet:text-sm text-[#9E9E9E]">3,040,000</span>
+                                          <span class="font-[Yekan] mobile:text-[13px] tablet:text-sm text-[#FE5F55]">300,000 تومان تخفیف</span>
+                                      </div>
+                                      <div class="flex flex-row items-center justify-end gap-1 pt-2.5 mobile:pl-2.5 laptop:pl-0">
+                                          <span class="text-[#0A5ABD] font-[Yekan] font-bold mobile:text-sm tablet:text-xl">2,740,000</span>
+                                          <span class="text-[#A1A3A1] font-[Yekan] mobile:text-[10px] tablet:text-xs">تومان</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>  
+                      <a href="" class="">
+                        <div class="mobile:w-full mobile:h-[161px] laptop:w-[346px] laptop:h-[605px] bg-white rounded-xl hover:shadow-xl laptop:p-5 flex mobile:flex-row laptop:flex-col laptop:gap-5">
+                              <img src="./public/image/card/img-2.jpg" alt=${item.alt} class="rounded-r-xl">
+                              <div class="mobile:w-full laptop:w-auto flex flex-col laptop:h-full justify-between">
+                                  <p class="text-start font-[Yekan] mobile:text-xs tablet:text-sm laptop:text-[16px] leading-7 line-clamp-3 text-[#000000DE]">شارژر دیواری 67 واتی گان با کابل تایپ سی مک دودو مدل Mcdodo CH-410</p>
+                                  <div class="flex flex-col">
+                                      <div class="flex mobile:justify-between laptop:gap-2 mobile:w-full laptop:w-auto mobile:pl-2.5 laptop:pl-0">
+                                          <span class="font-[Yekan] mobile:text-[13px] tablet:text-sm text-[#9E9E9E]">2,354,000</span>
+                                          <span class="font-[Yekan] mobile:text-[13px] tablet:text-sm text-[#FE5F55]">355,000 تومان تخفیف</span>
+                                      </div>
+                                      <div class="flex flex-row items-center justify-end gap-1 pt-2.5 mobile:pl-2.5 laptop:pl-0">
+                                          <span class="text-[#0A5ABD] font-[Yekan] font-bold mobile:text-sm tablet:text-xl">1,999,000</span>
+                                          <span class="text-[#A1A3A1] font-[Yekan] mobile:text-[10px] tablet:text-xs">تومان</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>  
+                    <div class="card laptop:w-[346px] laptop:h-[605px] flex flex-col justify-between mobile:gap-5 laptop:gap-0 mobile:pb-5 laptop:pb-0">
+                    
+                    </div>
+
+            </div>
+          </div>
+        </section>
+
+      <!-- #endregion -->
+
+      <!-- #region category  -->
+        <section dir="rtl" class="mobile:hidden tablet:flex w-full h-[400px] flex justify-center items-center ">
+          <div class="h-[300px] tablet:w-full laptop:w-[1240px] flex flex-col">
+            <div class="h-[50px] tablet:w-full laptop:w-[1240px] flex justify-center items-center">
+              <h1 class="font-bold font-[Yekan] text-2xl text-[#202044]">دسته‌بندی‌های منتخب</h1>
+            </div>
+            <div class="h-[250px] tablet:w-full laptop:w-[1240px] tablet:px-5 laptop:px-[60px] desktop:px-0 ">
+              <div class="swiper Category">
+                <div class="swiper-wrapper category">
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section dir="rtl" class="mobile:flex tablet:hidden w-full h-auto flex justify-center items-center py-8">
+          <div class="w-full h-auto flex flex-col gap-5 items-center justify-center">
+            <div class="w-full h-[15%] flex justify-center items-center">
+              <h1 class="font-[Yekan] text-[#000000] text-2xl">دسته‌بندی‌های منتخب</h1>
+            </div>
+            <div class="w-full h-[85%] mcat flex flex-wrap gap-5 items-center justify-center">
+
+            </div>
+          </div>
+        </section>
+
+      <!-- #endregion -->
+
+      <!--#region productsexist -->
+      <section dir="rtl" class="w-full mobile:h-auto laptop:h-[576px] flex justify-center items-center mobile:mb-8 laptop:mb-0">
+        <div class="flex flex-col mobile:w-full laptop:w-[1240px] mobile:h-auto laptop:h-[546px] laptop:rounded-xl bg-[#E2E2E2] mobile:px-5 laptop:px-[40px] mobile:gap-6 mobile:py-5">
+          <div class="w-full h-[15%] flex items-center justify-between">
+            <span class="font-[Yekan] text-2xl text-center font-bold text-[#757575]">همین الان موجود شد...</span>
+            <a href="#" class="flex font-normal items-center gap-2 text-[#4e5e60]">
+                <span class="text-sm mobile:hidden laptop:flex font-[Yekan]">مشاهده همه محصولات</span>
+                <i class="text-xl icon-arrow-square-left pb-1 text-[#4e5e60]"></i>
+            </a>
+          </div>
+          <div class="w-full mobile:h-[252px] tablet:h-[320px] laptop:h-[404px] ">
+              <div class="swiper Productsexist py-[20px]">
+              <div class="swiper-wrapper productsexist">
+
+              </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <!-- #region dastresi  -->
+        <section dir="rtl" class="mobile:hidden tablet:flex w-full h-[350px] flex justify-center items-center">
+          <div class="mobile:w-full laptop:w-[1240px] tablet:h-auto laptop:h-[235px]">
+            <div class="w-full h-[63px] flex justify-center items-center">
+              <h1 class="font-[Yekan] text-2xl font-bold text-[#1D1D16]">چرا دسترسی رو برای خرید انتخاب کنیم؟</h1>
+            </div>
+            <div class="w-full dast flex justify-between tablet:h-auto laptop:h-[172px] px-[30px]">
+
+
+            </div>
+          </div>
+        </section>
+      <!-- #endregion -->
+
+      <!--#region products -->
+      <section dir="rtl" class="w-full mobile:h-auto laptop:h-[576px] flex justify-center items-center ">
+        <div class="flex flex-col mobile:w-full laptop:w-[1240px] mobile:h-auto laptop:h-[546px] laptop:rounded-xl bg-[#E2E2E2] mobile:px-5 laptop:px-[40px] mobile:gap-6 mobile:py-5">
+          <div class="w-full h-[15%] flex items-center justify-between">
+            <span class="font-[Yekan] text-2xl text-center font-bold text-[#757575]">پرفروش‌ترین محصولات</span>
+            <a href="#" class="flex text-base font-normal items-center gap-2 text-[#4e5e60]">
+              <span class="text-sm mobile:hidden laptop:block font-[Yekan]">مشاهده همه محصولات</span>
+              <i class="text-xl icon-arrow-square-left pb-1 text-[#4e5e60]"></i>
+            </a>
+          </div>
+          <div class="w-full mobile:h-[252px] tablet:h-[320px] laptop:h-[404px] ">
+              <div class="swiper products py-[20px]">
+              <div class="swiper-wrapper product">
+
+              </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <!--#region brand -->
+        <section dir="rtl" class="w-full h-[260px] flex justify-center items-center mobile:px-[20px] laptop:px-0">
+          <div class="mobile:w-full laptop:w-[1240px] h-[210px]">
+            <div class="w-full h-[44px] ">
+              <span class="text-2xl font-[Yekan] text-center font-bold text-[#696969]">محبوب ترین برندها</span>
+            </div>
+            <div class="w-full h-[166px]">
+                <div class="swiper Brand">
+                  <div class="swiper-wrapper brand">
+
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+          </div>
+        </section>
+      <!-- #endregion -->
+
+      <!--#region articles -->
+        <section dir="rtl" class="w-full h-[390px] flex justify-center items-center mobile:px-[20px] laptop:px-0">
+          <div class="mobile:w-full laptop:w-[1240px] h-full">
+            <div class="w-full h-[84px] flex items-center justify-between">
+              <h1 class="font-[Yekan] text-2xl text-[#757575]">آخرین مقالات</h1>
+              <a href="#" class="flex text-base font-normal gap-2.5 items-center font-[Yekan] text-[#4e5e60]">
+                  <span class="mobile:hidden laptop:block">ورود به بلاگ</span>
+                  <i class="text-xl icon-arrow-square-left text-[#4e5e60]"></i>
+              </a>
+            </div>
+            <div class="w-full mobile:h-[178px] tablet:h-[230px] laptop:h-[256px]">
+                <div class="swiper Articles">
+                  <div class="swiper-wrapper articles">
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- #endregion -->
+
+      <!-- #region footer  -->
+        <footer dir="rtl" class="w-full mobile:h-auto laptop:h-[435px] flex items-center flex-col">
+          <div class="w-full mobile:h-auto laptop:h-[92px] bg-[#E2E2E2] flex justify-center">
+            <div class="flex mobile:items-start laptop:items-center justify-between mobile:flex-col laptop:flex-row w-[1240px] mobile:gap-7 laptop:gap-0 h-full bg-[#E2E2E2] mobile:p-6 laptop:p-0">
+              <div class="flex justify-center items-center gap-2.5">
+                <i class="icon-phone text-xl pb-1 text-[#757575]"></i>  
+                <h2 class="font-[Yekan] text-[#757575] text-[13px]">021-33902646</h2>
+              </div>
+              <div class="flex justify-center items-center gap-2.5">
+                <i class="icon-clock text-xl pb-1 text-[#757575]"></i>
+                <h2 class="font-[Yekan] text-[#757575] text-[13px]">شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی ساعت 16</h2>
+              </div>
+              <div class="flex justify-center items-center gap-2.5">
+                <i class="icon-location text-xl pb-1 text-[#757575]"></i>
+                <h2 class="font-[Yekan] text-[#757575] text-[13px]">تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه بدیع</h2>
+              </div>            
+              <div class="mobile:hidden laptop:flex text-[#757575] transition-all duration-200 ease-initial flex w-[96px] h-[44px] bg-white text-xs font-[Yekan] rounded-xl p-2 pr-2 pl-1 cursor-pointer  items-center justify-between leading-5 shadow-md">
+                <span class="hover:text-black ">برو بالا</span> 
+                <i class="icon-up-open text-xs text-gray align-middle p-2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="w-full mobile:h-auto laptop:h-[302px] flex justify-center">
+            <div class="flex mobile:flex-col justify-between laptop:flex-row w-[1240px] mobile:gap-8 laptop:gap-6 h-full mobile:px-[15px] laptop:px-0">
+              <div class="mobile:h-auto laptop:h-full mobile:w-full laptop:w-[220px] flex flex-col justify-center mobile:pt-10 laptop:pt-0 items-center gap-7">
+                <img src="./public/image/footer/logo.png" alt="" class="w-[189px] h-[80px]">
+                <div class=" flex justify-center items-center gap-6">
+                  <span class="text-sm font-[Yekan] text-[#2b2b2b]">با ما در ارتباط باشید:</span>
+                  <img src="./public/image/footer/img-2.png" alt="" class="">
+                </div>
+              </div>
+              <div class="mobile:h-auto laptop:h-full mobile:w-full laptop:w-[620px] flex flex-col justify-center">
+                <h1 class="font-bold font-[Yekan] text-xl text-[#000000de] mb-4">فروشگاه اینترنتی دسترسی</h1>
+                <p class="text-[#0009] leading-7 font-[Yekan] text-[16px]">فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398 از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست، لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران گجت جذاب ادامه میدهد.</p>
+              </div>
+              <div class="mobile:h-auto laptop:h-full mobile:w-full laptop:w-[170px] flex flex-col pt-2.5 gap-4">
+                <h3 class="font-bold font-[Yekan] text-[#000000de] text-xl mobile:text-center tablet:text-start">دسترسی سریع</h3>
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">باشگاه مشتریان</a> 
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">سوالات متداول</a> 
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">بلاگ</a> 
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">شرایط و قوانین</a>
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">ارتباط ما</a>
+                  <a href="#" class="font-[Yekan] text-sm text-[#757575] hover:text-black transition-all duration-200 ease-initial">درباره ما</a>
+              </div>
+              <div class="mobile:h-auto laptop:h-full mobile:w-full laptop:w-[170px] mobile:py-5 laptop:py-0 flex justify-center items-center">
+                <a href="#"><img src="./public/image/footer/img-3.png" alt="" class=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-[45px] bg-[#0A5ABD] flex justify-center">
+            <div class="flex justify-center items-center w-[1240px] h-full bg-[#0A5ABD]">
+              <h1 class="text-white font-[Yekan] mobile:text-xs tablet:text-sm">تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.</h1>
+            </div>
+          </div>
+        </footer>
+      <!-- #endregion -->
+
+    </div>
+    <!-- #endregion -->
+  
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
